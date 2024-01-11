@@ -4,7 +4,7 @@
 }
 
 .container-carousel {
-  flex: 1 1 60%; /* donne plus de place au carrousel, mais permet à la taille de changer si nécessaire */
+  flex: 1 1 60%;
   margin: calc(2rem + 2vw) 1em 1em;
   height: 10vh;
   position: relative;
@@ -22,12 +22,11 @@
 
 .carousel div {
   position: absolute;
-  transition: all 0.5s ease; /* Adoucir l'ensemble des transitions */
+  transition: all 0.5s ease;
   opacity: 0.6;
 }
 
 .carousel div img{
-  /* Calculer la taille des images avec calc() */
   width: calc(15em + 10vw);
   height: calc(8em + 5vw);
   object-fit: cover;
@@ -35,7 +34,6 @@
 }
 
 .carousel div iframe {
-  /* Calculer la taille de l'iframe avec calc() */
   width: calc(15em + 10vw);
   height: calc(8em + 5vw);
   object-fit: cover;
@@ -48,8 +46,8 @@
 .carousel div.selected {
   z-index: 10;
   opacity: 1;
-  left: 50%; /* Centrer l'élément sélectionné */
-  transform: scale(1.3); /* Grossir l'élément sélectionné */
+  left: 50%;
+  transform: scale(1.3);
 }
 
 .carousel div.prev, .carousel div.next {
@@ -58,16 +56,16 @@
 }
 
 .carousel div.prev {
-  left: 10%; /* Positionner à gauche du centre */
+  left: 10%;
 }
 
 .carousel div.next {
-  left: 90%; /* Positionner à droite du centre */
+  left: 90%;
 }
 
 
 .carousel div.hideLeft, .carousel div.hideRight {
-  display: none; /* Cacher les éléments hors de la vue */
+  display: none;
 }
 
 .buttons {

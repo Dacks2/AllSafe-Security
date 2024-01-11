@@ -83,8 +83,8 @@ img{
 }
 
 #collabs .container .brand img {
-  width: 150px; /* Ou la taille fixe que vous souhaitez pour les images */
-  height: 150px; /* Ou la taille fixe que vous souhaitez pour les images */
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   background-color: transparent;
 }

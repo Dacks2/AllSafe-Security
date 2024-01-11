@@ -55,9 +55,9 @@
   flex: 2;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrer les éléments */
-  overflow: hidden; /* Cacher tout débordement */
-  padding: 20px; /* Ajouter de l'espace autour du contenu */
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
 }
 
 .service h3 {
@@ -75,7 +75,7 @@
   margin-bottom: 1.2em;
   margin-right: 1em;
   text-align: justify;
-  word-wrap: break-word; /* Permet de casser les mots trop longs pour éviter le débordement */
+  word-wrap: break-word;
 }
 
 .service .ul-div {
@@ -85,7 +85,7 @@
 }
 
 .service-content ul {
-  width: 100%; /* Assurer la largeur totale dans le conteneur */
+  width: 100%;
   list-style-type: none;
   padding-bottom: 15px;
 }

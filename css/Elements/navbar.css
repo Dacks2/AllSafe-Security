@@ -3,12 +3,12 @@
    ========================================================================== */
 
 .navbar {
-  padding: 1.5rem 0; /* Ajustement du padding */
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Pleine largeur */
-  z-index: 100; /* S'assure que la navbar est au-dessus des autres éléments */
+  width: 100%;
+  z-index: 100;
 }
 
 .navbar__menu a, .navbar__menu a:hover, .search__button:hover {
@@ -24,7 +24,7 @@
 }
 
 .navbar:hover .navbar__logo img {
-  opacity: 0.8; /* Léger effet de fondu sur le survol */
+  opacity: 0.8;
 }
 
 .navbar__menu a {
@@ -37,7 +37,7 @@
   color: var(--text-color);
 }
 
-ul{ /* Supprime les marges*/
+ul{
   margin: 0;
   padding: 0;
   display: flex;
@@ -57,17 +57,17 @@ ul li a {
 
 
 .navbar__menu a:hover {
-  color: white; /* Couleur au survol */
-  background-color: dodgerblue; /* Fond au survol */
-  border-radius: 5px; /* Arrondir les coins au survol */
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
 }
 
 .navbar__menu a::before, .navbar__menu a::after {
   content: '';
   position: absolute;
   opacity: 0;
-  transform: scale(0); /* Initialiser la taille réduite */
-  transition: opacity 0.3s, transform 0.3s; /* Ajouter la transition pour l'opacité et la transformation */
+  transform: scale(0);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .navbar__menu a::before {
@@ -90,24 +90,23 @@ ul li a {
 
 .navbar__menu a:hover::before, .navbar__menu a:hover::after {
   opacity: 1;
-  transform: scale(1); /* Agrandir au survol */
+  transform: scale(1);
 }
 
 .client-space-icon {
-  fill: #4b8bc6; /* Couleur de l'icône */
-  width: 1.2rem; /* Taille de l'icône */
+  fill: #4b8bc6;
+  width: 1.2rem;
   height: 1.2rem;
-  margin-top: -0.1em; /* Ajuster le positionnement vertical */
+  margin-top: -0.1em;
   transition: fill 0.3s ease;
 }
 
 .navbar__menu a:hover .client-space-icon {
-  fill: white; /* Change la couleur au survol */
+  fill: white;
 }
 
 .navbar__menu a.client-space:hover::before,
 .navbar__menu a.client-space:hover::after {
-  /* Centrer les pseudo-éléments avec l'icône */
   top: 50%;
   left: 50%;
 }
@@ -118,11 +117,11 @@ ul li a {
    ========================================================================== */
 
 .menu-burger {
-  background-color: transparent; /* Fond transparent */
+  background-color: transparent;
   border: none;
-  display: none; /* Masqué par défaut */
-  width: 4rem; /* Largeur ajustée */
-  align-self: center; /* Alignement vertical avec le logo */
+  display: none;
+  width: 4rem;
+  align-self: center;
 }
 
 .line {
@@ -172,17 +171,17 @@ ul li a {
 
 @media screen and (max-width: 900px) {
   .navbar {
-    padding: 0; /* Ajustement du padding pour les petits écrans */
-    position: fixed; /* La navbar reste fixe en haut */
+    padding: 0;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Pleine largeur */
+    width: 100%;
   }
 
   .nav-links {
     position: fixed;
     top: 0;
-    left: 0; /* Corrigé pour assurer une couverture complète */
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -191,12 +190,12 @@ ul li a {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     transition: margin-left 0.5s ease;
-    z-index: 100; /* S'assure que la navbar est au-dessus des autres éléments */
-    margin-left: -100%; /* Déplace initialement le menu hors de l'écran */
+    z-index: 100;
+    margin-left: -100%;
   }
 
   .nav-links.mobile-menu {
-    margin-left: 0; /* Affiche le menu lorsqu'il est activé */
+    margin-left: 0;
   }
 
   .nav-links ul {
@@ -212,15 +211,15 @@ ul li a {
 
 
   .navbar .menu-burger {
-    display: block; /* Affiche le bouton sur les petits écrans */
-    z-index: 100; /* Au-dessus de la navbar et du logo */
+    display: block;
+    z-index: 100;
   }
 
   .navbar__menu a {
     padding: 10px;
     margin: 25px 0;
     font-size: 1.5rem;
-    color: white; /* Assure une bonne visibilité */
+    color: white;
   }
 
 }

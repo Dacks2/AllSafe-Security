@@ -10,7 +10,7 @@
   margin-top: 20px;
 }
 
-.btn-primary:hover { /* Couleur du bouton au survol */
+.btn-primary:hover {
   background-color: #555559;
   color: var(--text-color);
 }

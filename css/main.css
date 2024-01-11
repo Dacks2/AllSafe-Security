@@ -37,7 +37,7 @@ html, body {
   /* Background */
   background-color: var(--background-color);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23000032' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23010048' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2301005d' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23020073' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23020089' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: cover; /* Background couvre toute la zone */
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -57,15 +57,14 @@ h1, h2, h3, p {
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* Largeur scrollbar */
+  width: 12px;
   height: 12px;
-  background-color: #121212; /* Couleur scrollbar */
+  background-color: #121212;
 }
 
-/* Poignée scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: #003366; /* Couleur poignée*/
-  border-radius: 6px; /* Bords arrondis*/
+  background-color: #003366;
+  border-radius: 6px;
   border: 3px solid #121212;
 }
 
@@ -75,10 +74,10 @@ h1, h2, h3, p {
 }
 
 .navbar__logo {
-  position: fixed; /* Position fixe */
-  top: 10px; /* Distance du haut de la page */
-  left: 10px; /* Distance du côté gauche de la page */
-  z-index: 1000; /* Au-dessus autres éléments */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
 }
 
 .reveal {

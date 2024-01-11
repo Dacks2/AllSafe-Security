@@ -18,23 +18,19 @@ h1{
 }
 
 .container {
-    /* Position and sizing */
     display: flex;
     width: 80%;
     margin: 3em auto auto;
     flex-direction: column;
     align-self: center;
 
-    /* Content layout within the container */
     justify-content: start;
     align-items: center;
     gap: 1em;
 
-    /* Padding and background design */
     padding: 1em;
     background: rgba(51, 51, 51, 0.8);
 
-    /* Rounded Corners and Box Shadow */
     border-radius: 1em;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }

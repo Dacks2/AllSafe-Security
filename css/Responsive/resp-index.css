@@ -136,13 +136,13 @@
         width: 100%;
     }
     .container-carousel {
-        width: 80%;  /* use the original width from outside media queries */
-        margin: 1rem auto !important;  /* auto margins for left and right */
+        width: 80%;
+        margin: 1rem auto !important;
     }
     .carousel {
         position: relative !important;
-        width: 70% !important; /* augmenter la taille du carousel */
-        height: 20vh !important; /* augmenter la hauteur du carousel */
+        width: 70% !important;
+        height: 20vh !important;
     }
     .carousel .prev {
         left: 0 !important;
@@ -154,13 +154,13 @@
 
 @media screen and (max-width: 1200px), screen and (min-width: 901px) and (max-width: 992px)  {
     .carousel div img, .carousel div iframe {
-        width: calc(14em + 6vw) !important; /* dimension plus grande */
-        height: calc(6em + 3vw) !important; /* hauteur plus grande */
+        width: calc(14em + 6vw) !important;
+        height: calc(6em + 3vw) !important;
     }
     .buttons {
         position: fixed;
-        top: 25% !important; /* cette valeur peut varier en fonction de votre mise en page */
-        width: calc(20em + 8vw) !important; /* dimension plus grande */
+        top: 25% !important;
+        width: calc(20em + 8vw) !important;
         left: 25% !important;
     }
 }
@@ -190,7 +190,7 @@
     height: 100% !important;
   }
   .carousel-iframe iframe {
-    min-height: 20vh; /* Ajoute une hauteur minimale pour garder un aspect correct */
-    min-width: 80%; /* Ajoute une largeur minimale pour garder un aspect correct */
+    min-height: 20vh;
+    min-width: 80%;
   }
 }

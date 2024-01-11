@@ -25,7 +25,6 @@
     <meta name="theme-color" content="#fafafa">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
 
     <script src="js/main.js" defer></script>
@@ -174,11 +173,12 @@
     <footer> <!-- Tous droits réservés, Login, Réseaux sociaux -->
       <div class="footer-content">
         <p>&copy; 2023 AllSafe Security. Tous droits réservés.</p>
-        <a href="html/AdminLogin.html" class="btn btn-primary login">Log In</a>
+        <a href="html/404.html" class="btn btn-primary login">Log In</a>
       </div>
     </footer>
 
     <script>
+      // Menu Hamburger
       const menuHamburger = document.querySelector(".menu-burger")
       const navLinks = document.querySelector(".nav-links")
 
@@ -186,6 +186,8 @@
         navLinks.classList.toggle('mobile-menu')
       })
 
+
+      // Features reveal
       window.addEventListener('scroll', reveal);
 
       function reveal() {
@@ -204,23 +206,6 @@
           }
         }
       }
-    </script>
-    <script>
-      const carousel = document.querySelector('.carousel');
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth <= 900) {
-          carousel.style.display = "none";
-        } else {
-          carousel.style.display = "flex";
-        }
-      });
-
-      window.addEventListener('load', () => {
-        if (window.innerWidth <= 900) {
-          carousel.style.display = "none";
-        }
-      });
     </script>
   </body>
 </html>
