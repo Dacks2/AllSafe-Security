@@ -1,0 +1,196 @@
+@media screen and (max-width: 1200px){
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hero {
+        position: initial;
+        font-size: clamp(1em, 0.8em, 0.8em + 1vw);
+        padding: 10vh 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: calc(2em + 2vw);
+    }
+
+    .hero p,
+    .feature p {
+        font-size: clamp(0.8em, 1.2em, 1.5em);
+    }
+    .service-content p {
+        font-size: clamp(0.6em, 0.9em, 1.1em);
+    }
+    .hero .btn-primary {
+        font-size: clamp(0.8em, 1em, 1.5em);
+        padding: 0.7em 1em;
+    }
+    #features {
+      margin-bottom: 30vh;
+    }
+    .features, .features-container {
+        flex-flow: row wrap;
+        height: auto;
+    }
+
+    .feature {
+        flex-basis: 100%;
+        font-size: 0.9em;
+        height: 50%;
+    }
+
+    .feature h3, .service-content h3 {
+        font-size: clamp(1.2rem, 4vw, 1.9rem);
+    }
+
+    .features .btn-primary {
+        padding: 0.5em 1em;
+        font-size: clamp(0.8em, 1.5vw, 1.5em);
+    }
+
+    .scroll-container a {
+        right: 45% !important;
+    }
+
+    .services {
+        padding: 0 1em;
+    }
+    .services, .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-content, .service-image {
+        width: 100%;
+    }
+
+    /* Adjust width for small screens */
+    .services h2, .services h4,
+    .service-content h3 {
+        font-size: clamp(1.2rem, 4vw, 1.9rem);
+        margin: 0.8em 0;
+        text-align: center;
+    }
+
+    .service-content {
+        padding: 0 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .service-content ul {
+        padding: 0 1em 1em 0;
+        font-size: clamp(0.6em, 1em, 0.9em);
+        align-items: center;
+    }
+
+    .service-content ul li {
+        margin: 0.5em 0.5em;
+        padding: 0.5em;
+    }
+
+    .service-content .btn-primary {
+        margin: 0 1em 0 0;
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+
+    .navbar__logo {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .service-content ul {
+        padding: 0 0.5em 1em 0;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px), screen and (max-width: 1200px) {
+    .hero__content {
+        overflow: hidden;
+    }
+    .hero__content,
+    .hero-text {
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .hero-p {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .container-carousel {
+        width: 80%;  /* use the original width from outside media queries */
+        margin: 1rem auto !important;  /* auto margins for left and right */
+    }
+    .carousel {
+        position: relative !important;
+        width: 70% !important; /* augmenter la taille du carousel */
+        height: 20vh !important; /* augmenter la hauteur du carousel */
+    }
+    .carousel .prev {
+        left: 0 !important;
+    }
+    .carousel .next {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 901px) and (max-width: 992px)  {
+    .carousel div img, .carousel div iframe {
+        width: calc(14em + 6vw) !important; /* dimension plus grande */
+        height: calc(6em + 3vw) !important; /* hauteur plus grande */
+    }
+    .buttons {
+        position: fixed;
+        top: 25% !important; /* cette valeur peut varier en fonction de votre mise en page */
+        width: calc(20em + 8vw) !important; /* dimension plus grande */
+        left: 25% !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .buttons {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  .carousel {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .carousel-image {
+    display: none;
+  }
+  .carousel-iframe {
+    top: 0;
+    left: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    opacity: 1 !important;
+    height: 100% !important;
+  }
+  .carousel-iframe iframe {
+    min-height: 20vh; /* Ajoute une hauteur minimale pour garder un aspect correct */
+    min-width: 80%; /* Ajoute une largeur minimale pour garder un aspect correct */
+  }
+}

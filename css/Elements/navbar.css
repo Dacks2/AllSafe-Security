@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Navbar and Menu
+   ========================================================================== */
+
+.navbar {
+  padding: 1.5rem 0; /* Ajustement du padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Pleine largeur */
+  z-index: 100; /* S'assure que la navbar est au-dessus des autres éléments */
+}
+
+.navbar__menu a, .navbar__menu a:hover, .search__button:hover {
+  color: #4b8bc6;
+}
+
+
+.navbar__logo img {
+  height: 4rem;
+  width: auto;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.navbar:hover .navbar__logo img {
+  opacity: 0.8; /* Léger effet de fondu sur le survol */
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar__menu a:hover {
+  color: var(--text-color);
+}
+
+ul{ /* Supprime les marges*/
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+ul li a {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  position: relative;
+  transition: all .5s;
+}
+
+
+.navbar__menu a:hover {
+  color: white; /* Couleur au survol */
+  background-color: dodgerblue; /* Fond au survol */
+  border-radius: 5px; /* Arrondir les coins au survol */
+}
+
+.navbar__menu a::before, .navbar__menu a::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  transform: scale(0); /* Initialiser la taille réduite */
+  transition: opacity 0.3s, transform 0.3s; /* Ajouter la transition pour l'opacité et la transformation */
+}
+
+.navbar__menu a::before {
+  width: 1rem;
+  height: 1rem;
+  bottom: -8px;
+  left: -8px;
+  border-bottom: 3px solid dodgerblue;
+  border-left: 3px solid dodgerblue;
+}
+
+.navbar__menu a::after {
+  width: 1rem;
+  height: 1rem;
+  top: -8px;
+  right: -8px;
+  border-top: 3px solid dodgerblue;
+  border-right: 3px solid dodgerblue;
+}
+
+.navbar__menu a:hover::before, .navbar__menu a:hover::after {
+  opacity: 1;
+  transform: scale(1); /* Agrandir au survol */
+}
+
+.client-space-icon {
+  fill: #4b8bc6; /* Couleur de l'icône */
+  width: 1.2rem; /* Taille de l'icône */
+  height: 1.2rem;
+  margin-top: -0.1em; /* Ajuster le positionnement vertical */
+  transition: fill 0.3s ease;
+}
+
+.navbar__menu a:hover .client-space-icon {
+  fill: white; /* Change la couleur au survol */
+}
+
+.navbar__menu a.client-space:hover::before,
+.navbar__menu a.client-space:hover::after {
+  /* Centrer les pseudo-éléments avec l'icône */
+  top: 50%;
+  left: 50%;
+}
+
+
+/* ==========================================================================
+   Menu Burger
+   ========================================================================== */
+
+.menu-burger {
+  background-color: transparent; /* Fond transparent */
+  border: none;
+  display: none; /* Masqué par défaut */
+  width: 4rem; /* Largeur ajustée */
+  align-self: center; /* Alignement vertical avec le logo */
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+
+.mobile-menu {
+  margin-left: 0;
+}
+
+/* ==========================================================================
+   Navbar and Menu - Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 0; /* Ajustement du padding pour les petits écrans */
+    position: fixed; /* La navbar reste fixe en haut */
+    top: 0;
+    left: 0;
+    width: 100%; /* Pleine largeur */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0; /* Corrigé pour assurer une couverture complète */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: margin-left 0.5s ease;
+    z-index: 100; /* S'assure que la navbar est au-dessus des autres éléments */
+    margin-left: -100%; /* Déplace initialement le menu hors de l'écran */
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0; /* Affiche le menu lorsqu'il est activé */
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+  }
+
+
+  .navbar .menu-burger {
+    display: block; /* Affiche le bouton sur les petits écrans */
+    z-index: 100; /* Au-dessus de la navbar et du logo */
+  }
+
+  .navbar__menu a {
+    padding: 10px;
+    margin: 25px 0;
+    font-size: 1.5rem;
+    color: white; /* Assure une bonne visibilité */
+  }
+
+}
+

@@ -1,0 +1,16 @@
+.btn-primary {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn-primary:hover { /* Couleur du bouton au survol */
+  background-color: #555559;
+  color: var(--text-color);
+}

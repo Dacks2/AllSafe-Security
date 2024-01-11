@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Non-Trouvée</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <style>
+      body {
+        color: var(--text-color);
+        font-family: 'Roboto', sans-serif;
+        background-color: #18191A;
+        background-image: none;
+        min-height: 100vh;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section {
+        text-align: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header-class {
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+
+      .text-class {
+        font-size: 1.2em;
+      }
+
+      .link-class {
+        font-size: 1.2em;
+        color: var(--text-color);
+        text-decoration: none;
+        margin-top: 15px;
+      }
+
+      .return-button {
+        display: inline-block;
+        border: 2px solid var(--primary-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      .return-button:hover {
+        background-color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+  <section class="section">
+    <div>
+      <h1 class="header-class">Page Non-Trouvée</h1>
+      <p class="text-class">Désolé, mais la page que vous cherchiez n'existe pas.</p>
+      <br>
+      <div class="return-button">
+      <a href="../index.html" class="link-class">Retourner à l'accueil</a>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>

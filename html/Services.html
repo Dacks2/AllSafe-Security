@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>AllSafe | Accueil</title>
+    <meta name="description" content="A Website for a cyber-security startup"> <!-- Website description -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive viewport for mobile devices -->
+
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css"> <!-- Main.css -->
+
+    <link rel="stylesheet" href="/css/Services/services.css">
+    <link rel="stylesheet" href="/css/Elements/navbar.css">
+    <link rel="stylesheet" href="/css/Elements/button.css">
+    <link rel="stylesheet" href="/css/Elements/footer.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header> <!-- Logo, Search Bar, Navigation Menu -->
+      <nav class="navbar" id="navbar">
+        <div>
+          <a href="../index.html" class="navbar__logo">
+            <img src="/img/favicon.ico" alt="Logo CyberSec Startup">
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul class="navbar__menu">
+            <li><a href="About.html" class="nav-link">À propos</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a href="ClientLogin.html" class="nav-link">
+                <span class="icon-client-space">
+                  <svg viewBox="0 0 24 24" class="client-space-icon">
+                    <circle cx="12" cy="5.5" r="2.5"></circle>
+                    <path d="M15 10H9a4 4 0 0 0-4 4v7h14v-7a4 4 0 0 0-4-4z"></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="menu-burger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main> <!-- Main content -->
+        <div class="container">
+          <h2>Vous êtes :</h2>
+          <input type="checkbox" id="switch">
+          <label for="switch" class="button"></label>
+
+          <div id="diva">
+            <div class="content">
+              <img src="../img/services.jpg" alt="Image représentant les services de sécurité">
+              <h3><strong>Sécurité d'Entreprise Sur-Mesure</strong></h3>
+              <p><strong>Défiez-les cyber-menaces</strong> avec nos solutions complètes de sécurité. Approche globale, analyse précise, réaction rapide. Nous équipons votre entreprise avec des <strong>stratégies de défense personnalisées</strong> et <strong>des technologies de pointe</strong>.</p>
+              <ul>
+                <li><strong>Évaluation rigoureuse</strong> des risques.</li>
+                <li><strong>Solutions innovantes</strong> pour la défense.</li>
+                <li><strong>Formation proactive</strong> de vos équipes.</li>
+                <li><strong>Protection active</strong> grâce à un suivi constant.</li>
+              </ul>
+              <p><strong>Contactez-nous</strong> pour obtenir un devis sur mesure.</p>
+              <a href="Contact.html" class="btn-primary">Nous contacter</a>
+            </div>
+          </div>
+
+          <div id="divb">
+            <div class="content">
+              <img src="../img/security-application.jpg" alt="Image d'une application de sécurité" id="img2">
+              <h3><strong>Sécurité Personnalisée Haut de Gamme</strong></h3>
+              <p><strong>Assurez votre tranquillité d'esprit</strong> avec notre application de bureau complète. Plus qu'un simple antivirus, c'est un véritable coffre-fort pour vos données personnelles. Utilisable facilement et intuitivement, elle garantit la liberté de naviguer, communiquer et effectuer vos transactions en ligne en toute sécurité.</p>
+              <ul>
+                <li><strong>Analyse approfondie</strong> pour identifier les menaces.</li>
+                <li><strong>Outil tout-en-un</strong> pour une sécurité globale.</li>
+                <li><strong>Tutoriels et guides</strong> pour une utilisation sécurisée.</li>
+              </ul>
+              <p><strong>Contactez-nous</strong> pour obtenir un devis personnalisé.</p>
+              <a href="Contact.html" class="btn-primary">Nous contacter</a>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer> <!-- Tous droits réservés, Login, Réseaux sociaux -->
+      <div class="footer-content">
+        <p>&copy; 2023 AllSafe Security. Tous droits réservés.</p>
+        <a href="../html/AdminLogin.html" class="btn btn-primary login">Log In</a>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const menuHamburger = document.querySelector(".menu-burger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</html>

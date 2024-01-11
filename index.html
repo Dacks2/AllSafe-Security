@@ -1,0 +1,236 @@
+<!doctype html>
+  <html class="no-js" lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>AllSafe Security</title>
+    <meta name="description" content="A Website for a cyber-security startup"> <!-- Website description -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive viewport for mobile devices -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- Main.css -->
+
+
+    <link rel="stylesheet" href="css/Index/hero.css">
+    <link rel="stylesheet" href="css/Index/features.css">
+    <link rel="stylesheet" href="css/Index/services-index.css">
+    <link rel="stylesheet" href="css/Index/news.css">
+    <link rel="stylesheet" href="css/Responsive/resp-index.css">
+    <link rel="stylesheet" href="css/Elements/navbar.css">
+    <link rel="stylesheet" href="css/Index/carousel.css">
+    <link rel="stylesheet" href="css/Elements/button.css">
+    <link rel="stylesheet" href="css/Elements/footer.css">
+
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="theme-color" content="#fafafa">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header> <!-- Logo, Search Bar, Navigation Menu -->
+      <nav class="navbar" id="navbar">
+        <div>
+          <a href="#navbar" class="navbar__logo">
+            <img src="img/favicon.ico" alt="Logo CyberSec Startup">
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul class="navbar__menu">
+            <li><a href="html/Services.html" class="nav-link">Services</a></li>
+            <li><a href="html/About.html" class="nav-link">À propos</a></li>
+            <li><a href="html/Contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a href="html/ClientLogin.html" class="nav-link">
+                <span class="icon-client-space">
+                  <svg viewBox="0 0 24 24" class="client-space-icon">
+                    <circle cx="12" cy="5.5" r="2.5"></circle>
+                    <path d="M15 10H9a4 4 0 0 0-4 4v7h14v-7a4 4 0 0 0-4-4z"></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="menu-burger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+
+      </nav>
+    </header>
+
+    <main> <!-- Main content -->
+      <section class="hero">
+        <h1>AllSafe Security</h1>
+        <div class="hero__content">
+          <div class="hero-text">
+            <div class="hero-p">
+              <p><strong>Sécurité Cloud-Native</strong> : Visibilité optimale, technologie eBPF.</p>
+              <p><strong>Protection AI-Powered</strong> : Adaptabilité pour serveurs, VMs, workloads conteneurisés.</p>
+              <p><strong>Cloud Privé</strong> : Performance avec AWS, Azure, Google Cloud.</p>
+              <p><strong>Entreprises et Particuliers</strong> : Sécurité totale, application de bureau, tranquillité assurée.</p>
+              <p><strong>Partenaire Numérique</strong> : Innovation, efficacité, résilience, support expert.</p>
+            </div>
+          </div>
+
+          <div class="container-carousel">
+            <div class="carousel">
+              <div class="prev carousel-image">
+                <img src="img/Shield.jpg" alt="Shield Image" class="img-carousel">
+              </div>
+              <div class="selected carousel-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_tr8nND3lUk?si=_uWxT3RlhHh5ATCK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="next carousel-image">
+                <img src="img/server_room.jpg" alt="Server Room" class="img-carousel">
+              </div>
+            </div>
+            <div class="buttons">
+              <div id="prev" class="carousel-btn"><i class="fas fa-fw fa-arrow-left"></i></div>
+              <div id="next" class="carousel-btn"><i class="fas fa-fw fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <a href="#features" class="btn-primary">Prenez le Contrôle</a>
+      </section>
+
+
+      <section class="features reveal" id="features">
+        <div class="features-container">
+          <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Blindage de Données</h3>
+            <p>Sécurisation inébranlable des données clients. Confidentialité à toute épreuve grâce à des technologies de pointe.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-lock"></i>
+            <h3>Défense Anti-Cyberattaque</h3>
+            <p>Protection robuste contre les menaces en ligne. Défence contre les attaques informatiques. Protégeant la sûreté de vos systèmes.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-user-shield"></i>
+            <h3>Confidentialité Garantie</h3>
+            <p>Confidentialité totale de vos informations personnelles et professionnelles. Garantie de l'intégrité et la discrétion absolue.</p>
+          </div>
+        </div>
+        <a href="#services" class="btn btn-primary" id="featuresbutton">Protégez-vous avec nos Solutions Avancées</a>
+      </section>
+
+
+
+      <section class="services" id="services">
+        <h2><strong>Stratégies de Cybersécurité Personnalisées</strong></h2>
+        <h4>Adaptées à Vos Exigences Spécifiques</h4>
+
+        <div class="service">
+          <div class="service-image">
+            <img src="img/entreprise-security.jpg" alt="Sécurité pour les Entreprises">
+          </div>
+          <div class="service-content">
+            <h3><strong>Formule Entreprise: Votre Bouclier Cyber-Sécurité</strong></h3>
+            <p><strong>Boostez</strong> votre résilience face à la cybercriminalité. Nos experts vous offrent une protection globale, allant de l'<strong>évaluation des risques</strong> à la <strong>défense personnalisée</strong>. En cas d'attaque, nous intervenons rapidement pour minimiser l'impact. Grâce à nos <strong>technologies avancées</strong> et à un <strong>support expert</strong>, votre entreprise est en sécurité. Vous pouvez avoir l'esprit tranquille.</p>
+            <ul>
+              <li><strong>Analyse rigoureuse</strong> des menaces et failles.</li>
+              <li><strong>Solutions sur-mesure</strong>, sculptées pour s'adapter parfaitement à votre entreprise.</li>
+              <li><strong>Implication</strong> de vos équipes à travers des formations, pour une riposte encore plus rapide.</li>
+            </ul>
+            <a href="html/Services.html" class="btn btn-primary">Montez d'un Cran la Sécurité de vos Opérations!</a>
+          </div>
+        </div>
+        <div class="scroll-container">
+          <a href="#service-content2">
+            <div class="scroll-down"></div>
+          </a>
+        </div>
+        <div class="service">
+          <div class="service-image">
+            <img src="img/personnal-security.jpg" alt="Sécurité Personnelle">
+          </div>
+          <div class="service-content">
+            <h3><strong>Formule Particuliers : Votre Application dédiée à la Cyber-Sécurité</strong></h3>
+            <p><strong>Découvrez la tranquillité</strong> avec notre application de sécurité sur-mesure. Plus qu'un simple antivirus, elle sera votre plus fidèle allié sur Internet en défendant vos données personnelles. C'est un outil simple d'utilisation, garantissant des navigations, des échanges, et des transactions en ligne sécurisées.</p>
+            <ul>
+              <li><strong>Détecteur de menaces</strong> pour une protection proactive.</li>
+              <li><strong>Boîte à outils complète</strong> pour une sécurité optimisée.</li>
+              <li><strong>Tutoriels et guides</strong> pour une navigation sans soucis.</li>
+            </ul>
+            <a href="html/Services.html" class="btn btn-primary"  id="service-content2">Obtenez votre Application de Protection Personnalisée</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="news">
+        <h2>L'actualité d'AllSafe</h2>
+        <div class="news-item">
+          <h3>24 novembre 2023 : Lancement d'une nouvelle fonctionnalité</h3>
+          <p>Nous sommes ravis d'annoncer le lancement d'une nouvelle fonctionnalité prometteuse sur notre plateforme. Cette mise à jour a été conçue pour améliorer votre expérience utilisateur et renforcer votre sécurité en ligne. Plus de détails seront bientôt disponibles - restez à l'écoute !</p>
+        </div>
+        <div class="news-item">
+          <h3>12 décembre 2023 : Nouveau partenariat industriel</h3>
+          <p>Nous sommes fiers de vous annoncer que nous avons conclu un partenariat stratégique avec des leaders du secteur de la cyber-sécurité. Ce contrat nous permettra d'élargir notre offre de services et de mieux répondre à vos besoins en matière de sécurité en ligne.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer> <!-- Tous droits réservés, Login, Réseaux sociaux -->
+      <div class="footer-content">
+        <p>&copy; 2023 AllSafe Security. Tous droits réservés.</p>
+        <a href="html/AdminLogin.html" class="btn btn-primary login">Log In</a>
+      </div>
+    </footer>
+
+    <script>
+      const menuHamburger = document.querySelector(".menu-burger")
+      const navLinks = document.querySelector(".nav-links")
+
+      menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+      })
+
+      window.addEventListener('scroll', reveal);
+
+      function reveal() {
+        const reveals = document.querySelectorAll('.reveal');
+
+        for(let i = 0; i < reveals.length; i++) {
+          const windowHeight = window.innerHeight;
+          const revealTop = reveals[i].getBoundingClientRect().top;
+          const revealPoint = 150;
+
+          if(revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+          }
+          else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+    </script>
+    <script>
+      const carousel = document.querySelector('.carousel');
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth <= 900) {
+          carousel.style.display = "none";
+        } else {
+          carousel.style.display = "flex";
+        }
+      });
+
+      window.addEventListener('load', () => {
+        if (window.innerWidth <= 900) {
+          carousel.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

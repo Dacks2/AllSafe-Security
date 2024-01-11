@@ -1,0 +1,12 @@
+/* Variables CSS */
+:root {
+  /* Couleurs principales */
+  --primary-color: #024d98; /* Bleu foncé */
+  --secondary-color: #333333; /* Gris foncé */
+  --text-color: #d0d0d0; /* Gris clair */
+  --background-color: #000000; /* Noir */
+  --highlight-color: #D2B584; /* Bleu clair */
+
+  /* Typographie */
+  --font-family: 'Montserrat', sans-serif; /* Police principale */
+}

@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero {
+  text-align: center;
+  padding: 10vh clamp(1rem, 4vw, 5rem);
+  position: relative;
+  display: flex;
+  flex-direction: column; /* s'assure que le titre, le contenu et le bouton sont en colonne */
+  align-items: flex-start; /* garde le contenu aligné à gauche */
+}
+
+.hero__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: calc(2rem + 1vw); /* espace entre le texte et le carrousel */
+  width: 90%; /* laisser l'espace suppémentaire comme marge pour le texte */
+  max-width: 1200px;
+}
+
+.hero-text {
+  flex: 1 1 60%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin-right: calc(2rem + 2vw);
+
+  /* Ajouter du padding à l'intérieur pour donner de l'espace autour de votre texte */
+  padding: 1em;
+
+  /* Donner plus d'espace entre les lignes de texte */
+  line-height: 1.5;
+}
+
+.hero h1 {
+  font-size: calc(1.5rem + 3vw); /* Taille du texte */
+  filter: drop-shadow(0 0 0.2rem var(--primary-color)); /* Ajouter une ombre portée */
+  margin-bottom: 0.5em;
+}
+
+.hero-p {
+  font-size: clamp(0.8rem, 2vw, 1.2rem); /* Réduire la taille de police du texte */
+  line-height: 2em;
+  text-align: justify;
+}
+
+.hero-p p strong {
+  color: var(--highlight-color);
+  font-style: italic;
+  font-family: var(--font-family);
+}
+
+.hero .btn-primary {
+  align-self: center;
+  margin-top: 0;
+  font-size: 1.3em; /* Taille du texte */
+  padding: 0.6em 1.5em; /* Espace intérieur */
+  border-width: 0.2em; /* Taille de la bordure */
+}
+
+.scroll-container {
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  z-index: 100;
+}
+
+.scroll-down {
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 55px;
+    width: 35px;
+    background-color: white;
+}
+
+.scroll-down::before, .scroll-down::after {
+    animation: scroll-down 1s ease-in-out infinite;
+    border: 2px solid black;
+    border-left: transparent;
+    border-top: transparent;
+    content: "";
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    width: 10px;
+}
+
+.scroll-down::after {
+    animation-delay: .3s;
+    top: 20%;
+}
+
+a[href="#service-content2"] {
+  transition: opacity 0.2s ease;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    30%, 60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+}

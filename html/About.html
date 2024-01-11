@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>AllSafe | Accueil</title>
+    <meta name="description" content="A Website for a cyber-security startup"> <!-- Website description -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive viewport for mobile devices -->
+
+
+    <link rel="stylesheet" href="../css/main.css"> <!-- Main.css -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/Elements/navbar.css">
+    <link rel="stylesheet" href="../css/Elements/footer.css">
+    <link rel="stylesheet" href="../css/About/about.css">
+    <meta name="theme-color" content="#fafafa">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header> <!-- Logo, Search Bar, Navigation Menu -->
+      <nav class="navbar">
+        <div>
+          <a href="../index.html" class="navbar__logo">
+            <img src="/img/favicon.ico" alt="Logo CyberSec Startup">
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul class="navbar__menu">
+            <li><a href="Services.html" class="nav-link">Services</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a href="ClientLogin.html" class="nav-link">
+                <span class="icon-client-space">
+                  <svg viewBox="0 0 24 24" class="client-space-icon">
+                    <circle cx="12" cy="5.5" r="2.5"></circle>
+                    <path d="M15 10H9a4 4 0 0 0-4 4v7h14v-7a4 4 0 0 0-4-4z"></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="menu-burger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main> <!-- Main content -->
+      <section id="company">
+        <h1>L'entreprise</h1>
+        <div class="container">
+          AllSafe a fait ses débuts en 2011 avec une équipe dédiée d'experts en sécurité informatique. Notre mission était, et est toujours, de rendre le monde numérique plus sûr en fournissant des solutions de cybersécurité haut de gamme. Chaque défi était une occasion de grandir et de s'améliorer.<br>
+          <br>
+          En 2018, une collaboration avec Amazon nous a donné l'opportunité de montrer nos compétences lors d'une cyberattaque importante. Notre équipe a réussi à arrêter l'attaque et à protéger les données vitales. Cette expérience a renforcé notre réputation dans l'industrie de la cybersécurité.<br>
+          <br>
+          Aujourd'hui, AllSafe est reconnue pour sa capacité à protéger le monde en ligne de nos clients. Notre équipe d'experts travaille sans relâche pour combattre les menaces en ligne, vous donnant la liberté de profiter de l'Internet sans souci. Choisissez AllSafe, choisissez la tranquillité d'esprit en matière de cybersécurité.
+        </div>
+      </section>
+
+      <section id="collabs">
+        <h1>Nos collaborateurs</h1>
+        <div class="container">
+          <div class="brand">
+            <img src="../img/Amazon_icon.png" alt="Amazon">
+            <h2>Amazon</h2>
+          </div>
+          <div class="brand">
+            <img src="../img/Meta-logo.png" alt="Meta">
+            <h2>Meta</h2>
+          </div>
+          <div class="brand">
+            <img src="../img/7612698.png" alt="Google">
+            <h2>Google</h2>
+          </div>
+          <div class="brand">
+            <img src="../img/Isen.png" alt="Isen">
+            <h2>Isen</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="members">
+        <h1>Notre équipe</h1>
+        <div class="container">
+        <img src="/img/ALNOT-Gustave.jpg" alt="Profile piture" class="image">
+          <h2 class="name">Gustave ALNOT</h2>
+          <nav>
+            <ul>
+              <li>Developpeur Web Frontend</li>
+              <li>Expert Comptable</li>
+              <li>Humoriste</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="container">
+          <img src="/img/GEFFROY-Thomas.jpg" alt="Profile piture" class="image">
+          <h2 class="name">Thomas GEFFROY</h2>
+          <nav>
+            <ul>
+              <li>Expert en Cybersécurité</li>
+              <li>Developpeur Web Frontend</li>
+              <li>Diplômé de Harvard</li>
+            </ul>
+          </nav>
+
+        </div>
+      </section>
+    </main>
+    <footer> <!-- Tous droits réservés, Login, Réseaux sociaux -->
+      <div class="footer-content">
+        <p>&copy; 2023 AllSafe Security. Tous droits réservés.</p>
+        <a href="../html/AdminLogin.html" class="btn btn-primary login">Log In</a>
+      </div>
+      <div class="social-media-links">
+        <!-- réseaux sociaux -->
+      </div>
+    </footer>
+  </body>
+  <script>
+      const menuHamburger = document.querySelector(".menu-burger")
+      const navLinks = document.querySelector(".nav-links")
+
+      menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</html>

@@ -1,0 +1,95 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+@import url("/css/variables.css");
+@import url("/css/Index/hero.css");
+@import url("/css/Index/features.css");
+@import url("/css/Index/services-index.css");
+
+/* ==========================================================================
+   Main classes
+   ========================================================================== */
+
+html, body {
+  /* Texte */
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+
+  /* Scroll */
+  scroll-behavior: smooth; /* Scroll fluide */
+
+  /* Taille */
+  height: 100%;
+  min-height: 100vh;
+
+  /* Mise en page */
+  margin: 0;
+  padding: 0;
+
+  /* Disposition */
+  display: flex;
+  flex-direction: column;
+
+  /* Background */
+  background-color: var(--background-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23000032' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23010048' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2301005d' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23020073' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23020089' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover; /* Background couvre toute la zone */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Largeur scrollbar */
+  height: 12px;
+  background-color: #121212; /* Couleur scrollbar */
+}
+
+/* Poignée scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #003366; /* Couleur poignée*/
+  border-radius: 6px; /* Bords arrondis*/
+  border: 3px solid #121212;
+}
+
+/* Hover scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0055aa;
+}
+
+.navbar__logo {
+  position: fixed; /* Position fixe */
+  top: 10px; /* Distance du haut de la page */
+  left: 10px; /* Distance du côté gauche de la page */
+  z-index: 1000; /* Au-dessus autres éléments */
+}
+
+.reveal {
+  position: relative;
+  padding-top: 16vh;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}

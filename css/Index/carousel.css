@@ -1,0 +1,101 @@
+:root {
+  --btn-bg-color: #808080;
+  --btn-hover-color: var(--text-color);
+}
+
+.container-carousel {
+  flex: 1 1 60%; /* donne plus de place au carrousel, mais permet à la taille de changer si nécessaire */
+  margin: calc(2rem + 2vw) 1em 1em;
+  height: 10vh;
+  position: relative;
+  perspective: 1000px;
+  max-width: 100vw;
+}
+
+.carousel {
+  position: absolute;
+  width: calc(120% - 2em);
+  height: 30vh;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel div {
+  position: absolute;
+  transition: all 0.5s ease; /* Adoucir l'ensemble des transitions */
+  opacity: 0.6;
+}
+
+.carousel div img{
+  /* Calculer la taille des images avec calc() */
+  width: calc(15em + 10vw);
+  height: calc(8em + 5vw);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel div iframe {
+  /* Calculer la taille de l'iframe avec calc() */
+  width: calc(15em + 10vw);
+  height: calc(8em + 5vw);
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+}
+
+
+
+.carousel div.selected {
+  z-index: 10;
+  opacity: 1;
+  left: 50%; /* Centrer l'élément sélectionné */
+  transform: scale(1.3); /* Grossir l'élément sélectionné */
+}
+
+.carousel div.prev, .carousel div.next {
+  z-index: 5;
+  opacity: 0.6;
+}
+
+.carousel div.prev {
+  left: 10%; /* Positionner à gauche du centre */
+}
+
+.carousel div.next {
+  left: 90%; /* Positionner à droite du centre */
+}
+
+
+.carousel div.hideLeft, .carousel div.hideRight {
+  display: none; /* Cacher les éléments hors de la vue */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 100%;
+  left: 6%;
+  width: calc(50vw + 5%);
+}
+
+.carousel-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--btn-bg-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: var(--btn-hover-color);
+}
+
+.carousel-btn:active {
+  transform: scale(0.95);
+}

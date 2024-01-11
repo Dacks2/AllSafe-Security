@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Members Section
+========================================================================== */
+h1{
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  filter: drop-shadow(0 0 0.75rem var(--highlight-color));
+}
+section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  padding: 5em 0;
+  position: relative;
+  gap: 2em;
+}
+.container {
+  background: rgba(51, 51, 51, 0.8);
+  border-radius: 15px;
+  padding: 1em;
+  width: 60%;
+  height: 15.5em;
+  align-self: center;
+  display: grid;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 30% 70%;
+}
+
+.container.image {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+
+img{
+  border-radius: 1em;
+}
+.container.name {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.container nav {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  list-style-image: url(../../img/right_chevron.svg);
+}
+.container li {
+  padding: .7em 0;
+  color: rgb(173, 173, 173);
+}
+#company .container{
+  display: block;
+  color: rgb(173, 173, 173);
+  height: auto;
+}
+#collabs .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em;
+  height: max-content;
+}
+
+#collabs .container .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+#collabs .container .brand img {
+  width: 150px; /* Ou la taille fixe que vous souhaitez pour les images */
+  height: 150px; /* Ou la taille fixe que vous souhaitez pour les images */
+  object-fit: contain;
+  background-color: transparent;
+}
+
+#collabs .container .brand h2 {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width : 900px) {
+  #members .container {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width : 650px){
+  #members .container .image {
+    width: calc(100% - 1em);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

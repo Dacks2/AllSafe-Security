@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Contact Section
+========================================================================== */
+h1{
+    text-align: center;
+    margin: 2em 0 1em;
+}
+
+#choice{
+    width: auto;
+}
+
+.select{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    /* Position and sizing */
+    display: flex;
+    width: 80%;
+    margin: 3em auto auto;
+    flex-direction: column;
+    align-self: center;
+
+    /* Content layout within the container */
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+
+    /* Padding and background design */
+    padding: 1em;
+    background: rgba(51, 51, 51, 0.8);
+
+    /* Rounded Corners and Box Shadow */
+    border-radius: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 19% 29% 19% 29%;
+    border: none;
+    text-align: left;
+    gap: 2em;
+}
+
+input, select{
+    height: 2em;
+    width: 75%;
+    border-radius: .5em;
+}
+
+.input{
+    border-radius: .5em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+form .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+
+    transition: 0.5s;
+    width: 10%;
+}
+
+
+main{
+    position: relative;
+    min-height: 100vh;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px){
+    fieldset{
+        grid-template-columns: 38% 58%;
+    }
+
+    footer{
+        position: relative;
+        margin-top: 10em;
+    }
+
+    form .btn-primary{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .btn-primary{
+        width: 30%;
+    }
+}
